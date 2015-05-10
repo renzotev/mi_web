@@ -1,14 +1,72 @@
-@media (min-width 480px)
-	body
-		display block
-	
 @media (min-width 768px)
-	body
-		display block
+	header
+		.line-top
+			.container
+				display block
+		
+		.navbar
+			background-color transparent
+			
+			.navbar-collapse
+				position relative
+				text-align center
+				
+				.navbar-nav
+					margin-top 0
+					background-color transparent
+					display inline-block
+					float none
+					
+					li
+						&:before
+							content "|"
+							position absolute
+							line-height 30px
+							top 0
+							left 0
+						
+						&:first-child
+							content ""
+
+						a
+							color gray_body
+							font-size 16px
+							padding 7px 18px
+							
+							&:hover,
+							&:focus
+								background-color rojo
+								color white
+						
+						&.active
+							a
+								background-color rojo
+								color white
+	
+	.hidden
+		display block !important
+
 
 @media (min-width 992px)
-	body
-		display block
+	header
+		.line-top
+			.items-top
+				li
+					margin 0 20px
+		
+		.logos-media
+			margin-top 70px
+			margin-bottom 60px
+			
+			.social-media
+				margin 45px 0 0 0
+	
+	.slider
+		.slide
+			.caption
+				.content-caption
+					font-size 16px
+					padding 30px 150px 30px 30px
 
 @media (min-width 1200px)
 	body
