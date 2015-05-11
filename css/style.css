@@ -124,16 +124,56 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   background-color: #fff;
   color: #e91b23;
 }
-.slider .container {
-  background: url("../img/shadow-top-slider.png") no-repeat center top, url("../img/shadow-bottom-slider.png") no-repeat center bottom;
-  padding-top: 23px;
-  padding-bottom: 44px;
+.consult-phone {
+  min-height: 1px;
+}
+.consult-phone .container {
+  position: relative;
+}
+.consult-phone .container figure {
+  position: absolute;
+  top: -40px;
+  right: 15px;
+}
+.consult-phone .container figure img {
+  display: block;
+}
+.consult-phone .container figure figcaption {
+  color: #fff;
+  font-weight: bold;
+}
+.consult-phone .container figure figcaption .number {
+  position: absolute;
+  top: 16px;
+  left: 87px;
+  font-size: 24px;
+}
+.consult-phone .container figure figcaption .text-top {
+  top: 8px;
+  left: 90px;
+  position: absolute;
+  font-size: 11px;
+}
+.consult-phone .container figure figcaption .text-bottom {
+  top: 41px;
+  left: 90px;
+  position: absolute;
+  font-size: 11px;
+  letter-spacing: 5px;
+}
+.slider {
+  position: relative;
+  z-index: 2;
 }
 .slider .slides-wrapper {
   display: none;
   text-align: center;
   background: #fff;
   position: relative;
+  background: url("../img/shadow-top-slider.png") no-repeat center top, url("../img/shadow-bottom-slider.png") no-repeat center bottom;
+  padding-top: 23px;
+  padding-bottom: 40px;
+  background-size: 100% auto;
 }
 .slider .slides-wrapper .slidesjs-pagination {
   background: #fff;
@@ -232,6 +272,23 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   font-size: 12px;
   padding: 5px 20px;
 }
+.triangle-buttons .col-sm-3 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.triangle-buttons .bt-bg {
+  background-image: url("../img/btn-1.png");
+  background-repeat: no-repeat;
+  height: 67px;
+}
+.triangle-buttons .bt-bg.b-left {
+  background-position: 100% 0;
+  margin-right: -21px;
+}
+.triangle-buttons .bt-bg.b-right {
+  background-position: 0 100%;
+  margin-left: -21px;
+}
 @media (min-width: 768px) {
   header .line-top .container {
     display: block;
@@ -276,6 +333,9 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   .hidden {
     display: block !important;
   }
+  .triangle-buttons .container {
+    padding: 0 7px;
+  }
 }
 @media (min-width: 992px) {
   header .line-top .items-top li {
@@ -288,13 +348,22 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   header .logos-media .social-media {
     margin: 45px 0 0 0;
   }
+  .consult-phone .container figure {
+    top: -55px;
+  }
+  .slider .slides-wrapper {
+    padding-bottom: 55px;
+  }
   .slider .slide .caption .content-caption {
     font-size: 16px;
     padding: 30px 150px 30px 30px;
   }
 }
 @media (min-width: 1200px) {
-  body {
-    display: block;
+  .consult-phone .container figure {
+    top: -66px;
+  }
+  .slider .slides-wrapper {
+    padding-bottom: 66px;
   }
 }

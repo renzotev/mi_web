@@ -173,17 +173,57 @@ header
 							background-color white
 							color rojo
 
-.slider
+.consult-phone
+	min-height 1px
+	
 	.container
-		background url("../img/shadow-top-slider.png") no-repeat center top, url("../img/shadow-bottom-slider.png") no-repeat center bottom
-		padding-top 23px
-		padding-bottom 44px
+		position relative
 		
+		figure
+			position absolute
+			top -40px
+			right 15px
+			
+			img
+				display block
+			
+			figcaption
+				color white
+				font-weight bold
+				
+				.number
+					position absolute
+					top 16px
+					left 87px
+					font-size 24px
+				
+				.text-top
+					top 8px
+					left 90px
+					position absolute
+					font-size 11px
+				
+				.text-bottom
+					top 41px
+					left 90px
+					position absolute
+					font-size 11px
+					letter-spacing 5px
+					
+
+.slider
+	position relative
+	z-index 2
+
 	.slides-wrapper
 		display none
 		text-align center
 		background white
 		position relative
+		background url("../img/shadow-top-slider.png") no-repeat center top, url("../img/shadow-bottom-slider.png") no-repeat center bottom
+		padding-top 23px
+		padding-bottom 40px
+		background-size 100% auto
 		
 		.slidesjs-pagination
 			background white
@@ -265,6 +305,24 @@ header
 					text-decoration none
 					font-size 12px
 					padding 5px 20px
+
+.triangle-buttons
+	.col-sm-3
+		padding-left 8px
+		padding-right 8px
+		
+	.bt-bg
+		background-image url("../img/btn-1.png")
+		background-repeat no-repeat
+		height 67px
+		
+		&.b-left
+			background-position 100% 0
+			margin-right -21px
+		
+		&.b-right
+			background-position 0 100%
+			margin-left -21px
 				
 
 @import ("responsive.styl")
