@@ -44,6 +44,24 @@ transform(n)
 body
 	background url("../img/bg.png") repeat-x center top
 	color gray_body
+
+footer
+	background-color #666
+	background-image url("../img/bg-footer.png")
+	background-position 0 0
+	background-repeat no-repeat
+	color white
+	font-size 11px
+	padding-top 48px
+	padding-bottom 36px
+	text-align center
+	
+	.col-sm-4
+		text-align center
+		
+		.logo-blanco
+			display inline-block
+			margin-bottom 20px
 	
 header
 	.line-top
@@ -210,7 +228,62 @@ header
 					position absolute
 					font-size 11px
 					letter-spacing 5px
-					
+
+.icon-buttons
+	.col-sm-4
+		padding 0 45px 0 65px
+
+	.btn-ico
+		background-color #ca0000
+		text-decoration none
+		color white
+		text-align center
+		display block
+		position relative
+		padding 14px 10px 14px 36px
+		margin-top 4px
+		margin-bottom 30px
+		
+		&:after
+			content ""
+			background-repeat no-repeat
+			background-position 50% 50%
+			width 56px
+			height 56px
+			border-radius 50%
+			background-color #ff0000
+			position absolute
+			top -4px
+			left -20px
+		
+		&.btn-1
+			&:after
+				background-image url("../img/ico3-1.png")
+		
+		&.btn-2
+			&:after
+				background-image url("../img/ico3-2.png")
+				
+		&.btn-3
+			&:after
+				background-image url("../img/ico3-3.png")
+				
+		&.btn-4
+			&:after
+				background-image url("../img/ico3-4.png")
+				
+		&.btn-5
+			&:after
+				background-image url("../img/ico3-5.png")
+				
+		&.btn-6
+			&:after
+				background-image url("../img/ico3-6.png")
+		
+		&.btn-7
+			&:after
+				background-image url("../img/ico3-7.png")
+
 .image-buttons
 	margin-bottom 30px
 	
@@ -341,6 +414,9 @@ header
 					padding 5px 20px
 
 .tabs-section
+	margin-bottom 30px
+	border-bottom 1px dashed #969696
+
 	.nav-tabs
 		li
 			width 25%

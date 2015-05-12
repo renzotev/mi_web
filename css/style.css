@@ -2,6 +2,24 @@ body {
   background: url("../img/bg.png") repeat-x center top;
   color: #4d4d4d;
 }
+footer {
+  background-color: #666;
+  background-image: url("../img/bg-footer.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 11px;
+  padding-top: 48px;
+  padding-bottom: 36px;
+  text-align: center;
+}
+footer .col-sm-4 {
+  text-align: center;
+}
+footer .col-sm-4 .logo-blanco {
+  display: inline-block;
+  margin-bottom: 20px;
+}
 header .line-top {
   background-color: #e91b23;
   min-height: 20px;
@@ -161,6 +179,55 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   font-size: 11px;
   letter-spacing: 5px;
 }
+.icon-buttons .col-sm-4 {
+  padding: 0 45px 0 65px;
+}
+.icon-buttons .btn-ico {
+  background-color: #ca0000;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  display: block;
+  position: relative;
+  padding: 14px 10px 14px 36px;
+  margin-top: 4px;
+  margin-bottom: 30px;
+}
+.icon-buttons .btn-ico:after {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 56px;
+  height: 56px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #f00;
+  position: absolute;
+  top: -4px;
+  left: -20px;
+}
+.icon-buttons .btn-ico.btn-1:after {
+  background-image: url("../img/ico3-1.png");
+}
+.icon-buttons .btn-ico.btn-2:after {
+  background-image: url("../img/ico3-2.png");
+}
+.icon-buttons .btn-ico.btn-3:after {
+  background-image: url("../img/ico3-3.png");
+}
+.icon-buttons .btn-ico.btn-4:after {
+  background-image: url("../img/ico3-4.png");
+}
+.icon-buttons .btn-ico.btn-5:after {
+  background-image: url("../img/ico3-5.png");
+}
+.icon-buttons .btn-ico.btn-6:after {
+  background-image: url("../img/ico3-6.png");
+}
+.icon-buttons .btn-ico.btn-7:after {
+  background-image: url("../img/ico3-7.png");
+}
 .image-buttons {
   margin-bottom: 30px;
 }
@@ -304,6 +371,10 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   text-decoration: none;
   font-size: 12px;
   padding: 5px 20px;
+}
+.tabs-section {
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #969696;
 }
 .tabs-section .nav-tabs li {
   width: 25%;
@@ -464,6 +535,15 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   right: 19px;
 }
 @media (min-width: 768px) {
+  footer {
+    text-align: left;
+  }
+  footer .col-sm-4 {
+    text-align: right;
+  }
+  footer .col-sm-4 .logo-blanco {
+    margin-bottom: 0;
+  }
   header .line-top .container {
     display: block;
   }
@@ -506,6 +586,9 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   }
   .hidden {
     display: block !important;
+  }
+  .icon-buttons .col-sm-4 {
+    padding: 0 15px 0 35px;
   }
   .image-buttons figure figcaption span {
     padding: 0 35px;
