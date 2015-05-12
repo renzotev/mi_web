@@ -46,10 +46,49 @@
 	.hidden
 		display block !important
 
+	.image-buttons
+		figure
+			figcaption
+				span
+					padding 0 35px
+	
+	.tabs-section
+		.nav-tabs
+			li
+				a
+					height 60px
+		
+		.tab-content
+			.button-icon-text
+				padding 8px 30px 0 100px
+				
+				.title-btn
+					font-size 20px
+				
 	.triangle-buttons
 		.container 
 			padding 0 7px
-
+			
+		.bt-bg
+			font-size 12px
+			
+			&.b-left
+				padding 16px 56px 0 5px
+			
+			&.b-right
+				padding 16px 40px 0 30px
+			
+			&.ico-2
+				&:after
+					right 15px
+			
+			&.ico-3
+				&:after
+					right 22px
+			
+			&.ico-4
+				&:after
+					right 7px
 
 @media (min-width 992px)
 	header
@@ -69,6 +108,12 @@
 		.container
 			figure
 				top -55px
+	
+	.image-buttons
+		figure
+			figcaption
+				span
+					padding 0 90px
 			
 	.slider
 		.slides-wrapper
@@ -79,6 +124,41 @@
 				.content-caption
 					font-size 16px
 					padding 30px 150px 30px 30px
+	
+	.tabs-section
+		.nav-tabs
+			li
+				a
+					height 60px
+		
+		.tab-content
+			.button-icon-text
+				padding 28px 30px 0 100px
+				
+				.title-btn
+					font-size 24px
+	
+	.triangle-buttons
+		.bt-bg
+			font-size 14px
+			
+			&.b-left
+				padding 16px 77px 0 18px
+			
+			&.b-right
+				padding 16px 70px 0 45px
+			
+			&.ico-2
+				&:after
+					right 30px
+			
+			&.ico-3
+				&:after
+					right 32px
+			
+			&.ico-4
+				&:after
+					right 19px
 
 @media (min-width 1200px)
 	.consult-phone
@@ -89,3 +169,23 @@
 	.slider
 		.slides-wrapper
 			padding-bottom 66px
+	
+	.image-buttons
+		figure
+			figcaption
+				span
+					padding 0 140px
+	
+	.tabs-section
+		.nav-tabs
+			li
+				a
+					height auto
+					
+	.triangle-buttons
+		.bt-bg
+			&.b-left
+				padding 16px 120px 0 25px
+			
+			&.b-right
+				padding 16px 120px 0 52px

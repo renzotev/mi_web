@@ -161,6 +161,40 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   font-size: 11px;
   letter-spacing: 5px;
 }
+.image-buttons {
+  margin-bottom: 30px;
+}
+.image-buttons .container {
+  padding: 0 22px;
+}
+.image-buttons .container .col-sm-6 {
+  padding: 0 8px;
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+}
+.image-buttons figure {
+  text-align: center;
+}
+.image-buttons figure figcaption {
+  color: #fff;
+  background-color: #e91b23;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+  height: 98px;
+  display: table;
+  width: 100%;
+}
+.image-buttons figure figcaption span {
+  display: table-cell;
+  padding: 0 20px;
+  vertical-align: middle;
+  line-height: 26px;
+}
+.image-buttons figure .img-responsive {
+  display: inline-block;
+}
 .slider {
   position: relative;
   z-index: 2;
@@ -168,7 +202,6 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
 .slider .slides-wrapper {
   display: none;
   text-align: center;
-  background: #fff;
   position: relative;
   background: url("../img/shadow-top-slider.png") no-repeat center top, url("../img/shadow-bottom-slider.png") no-repeat center bottom;
   padding-top: 23px;
@@ -272,22 +305,163 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   font-size: 12px;
   padding: 5px 20px;
 }
+.tabs-section .nav-tabs li {
+  width: 25%;
+  padding: 0 2px;
+}
+.tabs-section .nav-tabs li a {
+  background-color: #f00;
+  color: #fff;
+  border: 0 none;
+  display: table;
+  width: 100%;
+  height: 80px;
+  font-weight: bold;
+}
+.tabs-section .nav-tabs li a span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.tabs-section .nav-tabs li a:hover,
+.tabs-section .nav-tabs li a:focus {
+  background-color: #c2c4c6;
+  color: #666;
+}
+.tabs-section .nav-tabs li.active a {
+  background-color: #c2c4c6;
+  color: #666;
+}
+.tabs-section .tab-content {
+  background-color: #c2c4c6;
+  background: #c2c4c6;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#c2c4c6), to(#fff));
+  background: -webkit-linear-gradient(#c2c4c6, #fff);
+  background: -moz-linear-gradient(#c2c4c6, #fff);
+  background: -ms-linear-gradient(#c2c4c6, #fff);
+  background: -o-linear-gradient(#c2c4c6, #fff);
+  background: linear-gradient(#c2c4c6, #fff);
+}
+.tabs-section .tab-content .button-icon-text {
+  display: block;
+  background-color: #e91b23;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 110px;
+  padding: 28px 30px 0 100px;
+  position: relative;
+}
+.tabs-section .tab-content .button-icon-text:before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.tabs-section .tab-content .button-icon-text.btn-1:before {
+  background-image: url("../img/ico2-1.png");
+  width: 54px;
+  height: 35px;
+  top: 40px;
+  left: 28px;
+}
+.tabs-section .tab-content .button-icon-text.btn-2:before {
+  background-image: url("../img/ico2-2.png");
+  width: 49px;
+  height: 52px;
+  top: 31px;
+  left: 28px;
+}
+.tabs-section .tab-content .button-icon-text.btn-3:before {
+  background-image: url("../img/ico2-3.png");
+  width: 67px;
+  height: 52px;
+  top: 30px;
+  left: 15px;
+}
+.tabs-section .tab-content .button-icon-text.btn-4:before {
+  background-image: url("../img/ico2-4.png");
+  width: 68px;
+  height: 41px;
+  top: 34px;
+  left: 20px;
+}
+.tabs-section .tab-content .button-icon-text .title-btn {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+.tabs-section .tab-content .button-icon-text .text-btn {
+  display: block;
+  line-height: 16px;
+}
+.tabs-section .tab-content .tab-pane {
+  padding: 20px;
+}
+.triangle-buttons {
+  margin-top: 35px;
+  margin-bottom: 28px;
+}
 .triangle-buttons .col-sm-3 {
   padding-left: 8px;
   padding-right: 8px;
+}
+.triangle-buttons .col-xs-6 {
+  margin-bottom: 7px;
+  display: block;
+  text-decoration: none;
 }
 .triangle-buttons .bt-bg {
   background-image: url("../img/btn-1.png");
   background-repeat: no-repeat;
   height: 67px;
+  position: relative;
+  color: #fff;
+}
+.triangle-buttons .bt-bg:after {
+  content: "";
+  position: absolute;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 .triangle-buttons .bt-bg.b-left {
   background-position: 100% 0;
   margin-right: -21px;
+  padding: 16px 70px 0 11px;
 }
 .triangle-buttons .bt-bg.b-right {
   background-position: 0 100%;
   margin-left: -21px;
+  padding: 16px 76px 0 36px;
+}
+.triangle-buttons .bt-bg.ico-1:after {
+  background-image: url("../img/ico-1.png");
+  width: 34px;
+  height: 32px;
+  right: 30px;
+  top: 22px;
+}
+.triangle-buttons .bt-bg.ico-2:after {
+  background-image: url("../img/ico-2.png");
+  width: 42px;
+  height: 42px;
+  top: 13px;
+  right: 30px;
+}
+.triangle-buttons .bt-bg.ico-3:after {
+  background-image: url("../img/ico-3.png");
+  width: 33px;
+  height: 37px;
+  top: 18px;
+  right: 32px;
+}
+.triangle-buttons .bt-bg.ico-4:after {
+  background-image: url("../img/ico-4.png");
+  width: 47px;
+  height: 39px;
+  top: 15px;
+  right: 19px;
 }
 @media (min-width: 768px) {
   header .line-top .container {
@@ -333,8 +507,38 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   .hidden {
     display: block !important;
   }
+  .image-buttons figure figcaption span {
+    padding: 0 35px;
+  }
+  .tabs-section .nav-tabs li a {
+    height: 60px;
+  }
+  .tabs-section .tab-content .button-icon-text {
+    padding: 8px 30px 0 100px;
+  }
+  .tabs-section .tab-content .button-icon-text .title-btn {
+    font-size: 20px;
+  }
   .triangle-buttons .container {
     padding: 0 7px;
+  }
+  .triangle-buttons .bt-bg {
+    font-size: 12px;
+  }
+  .triangle-buttons .bt-bg.b-left {
+    padding: 16px 56px 0 5px;
+  }
+  .triangle-buttons .bt-bg.b-right {
+    padding: 16px 40px 0 30px;
+  }
+  .triangle-buttons .bt-bg.ico-2:after {
+    right: 15px;
+  }
+  .triangle-buttons .bt-bg.ico-3:after {
+    right: 22px;
+  }
+  .triangle-buttons .bt-bg.ico-4:after {
+    right: 7px;
   }
 }
 @media (min-width: 992px) {
@@ -351,12 +555,42 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   .consult-phone .container figure {
     top: -55px;
   }
+  .image-buttons figure figcaption span {
+    padding: 0 90px;
+  }
   .slider .slides-wrapper {
     padding-bottom: 55px;
   }
   .slider .slide .caption .content-caption {
     font-size: 16px;
     padding: 30px 150px 30px 30px;
+  }
+  .tabs-section .nav-tabs li a {
+    height: 60px;
+  }
+  .tabs-section .tab-content .button-icon-text {
+    padding: 28px 30px 0 100px;
+  }
+  .tabs-section .tab-content .button-icon-text .title-btn {
+    font-size: 24px;
+  }
+  .triangle-buttons .bt-bg {
+    font-size: 14px;
+  }
+  .triangle-buttons .bt-bg.b-left {
+    padding: 16px 77px 0 18px;
+  }
+  .triangle-buttons .bt-bg.b-right {
+    padding: 16px 70px 0 45px;
+  }
+  .triangle-buttons .bt-bg.ico-2:after {
+    right: 30px;
+  }
+  .triangle-buttons .bt-bg.ico-3:after {
+    right: 32px;
+  }
+  .triangle-buttons .bt-bg.ico-4:after {
+    right: 19px;
   }
 }
 @media (min-width: 1200px) {
@@ -365,5 +599,17 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   }
   .slider .slides-wrapper {
     padding-bottom: 66px;
+  }
+  .image-buttons figure figcaption span {
+    padding: 0 140px;
+  }
+  .tabs-section .nav-tabs li a {
+    height: auto;
+  }
+  .triangle-buttons .bt-bg.b-left {
+    padding: 16px 120px 0 25px;
+  }
+  .triangle-buttons .bt-bg.b-right {
+    padding: 16px 120px 0 52px;
   }
 }

@@ -32,6 +32,7 @@ background-gradient(a, b)
 	background -o-linear-gradient(a, b)
 	background linear-gradient(a, b)
 	
+	
 transform(n)
 	-webkit-transform n
 	-moz-transform n
@@ -210,6 +211,40 @@ header
 					font-size 11px
 					letter-spacing 5px
 					
+.image-buttons
+	margin-bottom 30px
+	
+	.container
+		padding 0 22px
+		
+		.col-sm-6
+			padding 0 8px
+			margin-bottom 20px
+			display block
+			text-decoration none
+	
+	figure
+		text-align center
+		
+		figcaption
+			color white
+			background-color rojo
+			font-size 28px
+			font-weight bold
+			text-align left
+			height 98px
+			display table
+			width 100%
+			
+			span
+				display table-cell
+				padding 0 20px
+				vertical-align middle
+				line-height 26px
+			
+		
+		.img-responsive
+			display inline-block
 
 .slider
 	position relative
@@ -218,7 +253,6 @@ header
 	.slides-wrapper
 		display none
 		text-align center
-		background white
 		position relative
 		background url("../img/shadow-top-slider.png") no-repeat center top, url("../img/shadow-bottom-slider.png") no-repeat center bottom
 		padding-top 23px
@@ -306,23 +340,170 @@ header
 					font-size 12px
 					padding 5px 20px
 
+.tabs-section
+	.nav-tabs
+		li
+			width 25%
+			padding 0 2px
+			
+			a
+				background-color red
+				color white
+				border 0 none
+				display table
+				width 100%
+				height 80px
+				font-weight bold
+				
+				span
+					display table-cell
+					vertical-align middle
+				
+				&:hover,
+				&:focus
+					background-color #c2c4c6
+					color #666
+			
+			&.active
+				a
+					background-color #c2c4c6
+					color #666
+					
+	
+	.tab-content
+		background-color #c2c4c6
+		background-gradient(#c2c4c6, #FFFFFF)
+		
+		.button-icon-text
+			display block
+			background-color rojo
+			color white
+			text-decoration none
+			margin-top 15px
+			margin-bottom 15px
+			height 110px
+			padding 28px 30px 0 100px
+			position relative
+			
+			&:before
+				position absolute
+				content ""
+				background-repeat no-repeat
+				background-position 0 0
+			
+			&.btn-1
+				&:before
+					background-image url("../img/ico2-1.png")
+					width 54px
+					height 35px
+					top 40px
+					left 28px
+			
+			&.btn-2
+				&:before
+					background-image url("../img/ico2-2.png")
+					width 49px
+					height 52px
+					top 31px
+					left 28px
+			
+			&.btn-3
+				&:before
+					background-image url("../img/ico2-3.png")
+					width 67px
+					height 52px
+					top 30px
+					left 15px
+			
+			&.btn-4
+				&:before
+					background-image url("../img/ico2-4.png")
+					width 68px
+					height 41px
+					top 34px
+					left 20px
+			
+			.title-btn
+				display block
+				font-weight bold
+				font-size 24px
+				line-height 30px
+			
+			.text-btn
+				display block
+				line-height 16px
+
+		.tab-pane
+			padding 20px
+
 .triangle-buttons
+	margin-top 35px
+	margin-bottom 28px
+	
 	.col-sm-3
 		padding-left 8px
 		padding-right 8px
+	
+	.col-xs-6
+		margin-bottom 7px
+		display block
+		text-decoration none
 		
 	.bt-bg
 		background-image url("../img/btn-1.png")
 		background-repeat no-repeat
 		height 67px
+		position relative
+		color white
+		
+		&:after
+			content ""
+			position absolute
+			background-position 0 0
+			background-repeat no-repeat
 		
 		&.b-left
 			background-position 100% 0
 			margin-right -21px
+			padding 16px 70px 0 11px
 		
 		&.b-right
 			background-position 0 100%
 			margin-left -21px
+			padding 16px 76px 0 36px
+		
+		&.ico-1
+			&:after
+				background-image url("../img/ico-1.png")
+				width 34px
+				height 32px
+				right 30px
+				top 22px
+				
+		&.ico-2
+			&:after
+				background-image url("../img/ico-2.png")
+				width 42px
+				height 42px
+				top 13px
+				right 30px
+		
+		&.ico-3
+			&:after
+				background-image url("../img/ico-3.png")
+				width 33px
+				height 37px
+				top 18px
+				right 32px
+		
+		&.ico-4
+			&:after
+				background-image url("../img/ico-4.png")
+				width 47px
+				height 39px
+				top 15px
+				right 19px
+		
 				
 
 @import ("responsive.styl")
