@@ -18,10 +18,19 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.3&appId=452128208267385";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         
         <header>
             <div class="line-top">
-                <div class="container hidden">
+                <!--<div class="container hidden">
                     <ul class="items-top pull-right">
                         <li class="icon-mapa">
                             <a href="#">Mapa Web</a>
@@ -39,7 +48,7 @@
                             <a href="#">Portal de Transparencia</a>
                         </li>
                     </ul>
-                </div>
+                </div>-->
             </div>
 
             <div class="logos-media">
@@ -78,7 +87,9 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Inicio</a></li>
                             <li><a href="#">El Ministerio</a></li>
-                            <li><a href="#">Servicios Guía de Trámites</a></li>
+                            <li><a href="#">Servicios</a></li>
+                            <li><a href="#">Guía de Trámites</a></li>
+                            <li><a href="#">Estadística</a></li>
                             <li><a href="#">Prensa</a></li>
                             <li><a href="#">Contáctenos</a></li>
                         </ul>
@@ -236,32 +247,18 @@
                             <div class="clearfix"></div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="tab-consejos">
-                            <div class="col-sm-6">
-                                <a href="#" class="button-icon-text btn-1">
-                                    <span class="title-btn">Perú Responsable</span>
-                                    <span class="text-btn">Programa Nacional de Promoción de la Responsabilidad Social Empresarial</span>
-                                </a>
+                            <div class="col-sm-3 img-consejo">
+                                <img src="img/consejo-1.jpg" class="img-responsive">
                             </div>
-                            <div class="col-sm-6">
-                                <a href="#" class="button-icon-text btn-2">
-                                    <span class="title-btn">Trabaja Perú</span>
-                                    <span class="text-btn">Programa para la Generación de Empleo Social Inclusivo</span>
-                                </a>
+                            <div class="col-sm-3 img-consejo">
+                               <img src="img/consejo-2.jpg" class="img-responsive">
                             </div>
 
-                            <div class="clearfix"></div>
-
-                            <div class="col-sm-6">
-                                <a href="#" class="button-icon-text btn-3">
-                                    <span class="title-btn">Vamos Perú</span>
-                                    <span class="text-btn">Programa Nacional para la Promoción de Oportunidades Laborales</span>
-                                </a>
+                            <div class="col-sm-3 img-consejo">
+                                <img src="img/consejo-3.jpg" class="img-responsive">
                             </div>
-                            <div class="col-sm-6">
-                                <a href="#" class="button-icon-text btn-4">
-                                    <span class="title-btn">Jóvenes a la Obra</span>
-                                    <span class="text-btn">Programa Nacional de Empleo Juvenil</span>
-                                </a>
+                            <div class="col-sm-3 img-consejo">
+                              <img src="img/consejo-4.jpg" class="img-responsive">
                             </div>
 
                             <div class="clearfix"></div>
@@ -351,6 +348,21 @@
                     <a href="#" class="btn-ico btn-7">
                         Plan Anticorrupción
                     </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="videos-wrapper hidden">
+            <div class="container">
+                <div class="col-sm-8">
+                    <div class="header-video">Videos</div>
+                    <div class="clearfix"></div>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/h4gAYCHTw48" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="fb-page" data-href="https://www.facebook.com/TrabajoParaTodos" data-hide-cover="false" data-show-facepile="true" data-show-posts="true" data-width="200"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/TrabajoParaTodos"><a href="https://www.facebook.com/TrabajoParaTodos">Ministerio de Trabajo y Promoción del Empleo</a></blockquote></div></div>
                 </div>
             </div>
         </div>

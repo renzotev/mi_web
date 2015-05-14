@@ -159,6 +159,8 @@ header
 		background-color rojo
 		border 0 none
 		margin-bottom 0
+		position relative
+		z-index 10
 		
 		.navbar-header
 			.navbar-toggle
@@ -424,6 +426,7 @@ header
 
 .tabs-section
 	margin-bottom 30px
+	padding-bottom 20px
 	border-bottom 1px dashed #969696
 
 	.nav-tabs
@@ -517,6 +520,13 @@ header
 			.text-btn
 				display block
 				line-height 16px
+		
+		.img-consejo
+			text-align center
+			margin-bottom 20px
+			
+			.img-responsive
+				display inline-block
 
 		.tab-pane
 			padding 20px
@@ -588,7 +598,44 @@ header
 				height 39px
 				top 15px
 				right 19px
+
+.videos-wrapper
+	margin-top 20px
+	border-bottom 1px dashed #969696
+	padding-bottom 30px
+	
+	.col-sm-4
+		overflow hidden
+		padding-top 40px
+	
+	.fb-page
+		float left
 		
+	.header-video
+		background-color #e30000
+		border-radius 5px 5px 0 0
+		color white
+		font-weight bold
+		text-align center
+		padding 10px 80px
+		display inline-block
+		margin-left 12px
+
+	.video-container
+		position relative
+		padding-bottom 56.25%
+		padding-top 30px
+		height 0
+		overflow hidden
+		
+		iframe,
+		object,
+		embed
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
 				
 
 @import ("responsive.styl")

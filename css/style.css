@@ -111,6 +111,8 @@ header .navbar {
   background-color: #e91b23;
   border: 0 none;
   margin-bottom: 0;
+  position: relative;
+  z-index: 10;
 }
 header .navbar .navbar-header .navbar-toggle {
   background-color: #fff;
@@ -384,6 +386,7 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
 }
 .tabs-section {
   margin-bottom: 30px;
+  padding-bottom: 20px;
   border-bottom: 1px dashed #969696;
 }
 .tabs-section .nav-tabs li {
@@ -477,6 +480,13 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   display: block;
   line-height: 16px;
 }
+.tabs-section .tab-content .img-consejo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.tabs-section .tab-content .img-consejo .img-responsive {
+  display: inline-block;
+}
 .tabs-section .tab-content .tab-pane {
   padding: 20px;
 }
@@ -544,6 +554,46 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   top: 15px;
   right: 19px;
 }
+.videos-wrapper {
+  margin-top: 20px;
+  border-bottom: 1px dashed #969696;
+  padding-bottom: 30px;
+}
+.videos-wrapper .col-sm-4 {
+  overflow: hidden;
+  padding-top: 40px;
+}
+.videos-wrapper .fb-page {
+  float: left;
+}
+.videos-wrapper .header-video {
+  background-color: #e30000;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 80px;
+  display: inline-block;
+  margin-left: 12px;
+}
+.videos-wrapper .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.videos-wrapper .video-container iframe,
+.videos-wrapper .video-container object,
+.videos-wrapper .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media (min-width: 768px) {
   footer {
     text-align: left;
@@ -553,6 +603,9 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   }
   footer .col-sm-4 .logo-blanco {
     margin-bottom: 0;
+  }
+  header .line-top {
+    min-height: 40px;
   }
   header .line-top .container {
     display: block;
@@ -684,6 +737,9 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   }
   .triangle-buttons .bt-bg.ico-4:after {
     right: 19px;
+  }
+  .videos-wrapper .fb-page {
+    float: right;
   }
 }
 @media (min-width: 1200px) {
