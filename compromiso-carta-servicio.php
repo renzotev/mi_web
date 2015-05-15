@@ -1,0 +1,46 @@
+<?php require_once 'parts/header.php'; ?>
+
+<div class="breadcrumb-wrapper hidden">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="servicios.php">Servicios</a></li>
+            <li><a href="#">Cartas de servicios</a></li>
+            <li class="active"><span>Compromisos: Carta de Servicios Certificado Único Laboral</span></li>
+        </ol>
+    </div>
+</div>
+
+<div class="general-content">
+    <div class="container">
+        <dl class="list-links-years">
+        	<dt>AÑO 2015</dt>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE MARZO</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE FEBRERO</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE ENERO</a></dd>
+
+			<dt>AÑO 2014</dt>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE DICIEMBRE</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE NOVIEMBRE</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE OCTUBRE</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE SETIEMBRE</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE AGOSTO</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE JULIO</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE JUNIO</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE MAYO</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE ABRIL</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE MARZO</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO UNICO LABORAL AL MES DE FEBRERO</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO ÚNICO LABORAL AL MES DE ENERO</a></dd>
+
+			<dt>AÑO 2013</dt>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO ÚNICO LABORAL AL MES DE DICIEMBRE</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO ÚNICO LABORAL AL MES DE NOVIEMBRE</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO ÚNICO LABORAL AL MES DE OCTUBRE</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO ÚNICO LABORAL AL MES DE SETIEMBRE</a></dd>
+			<dd><a href="#">COMPROMISOS DE CALIDAD DE LA CARTA DE SERVICIOS DE CERTIFICADO ÚNICO LABORAL AL MES DE AGOSTO</a></dd>
+        </dl>
+    </div>
+</div>
+
+<?php require_once 'parts/footer.php'; ?>

@@ -151,7 +151,7 @@
                                     <li><a href="#">Condecoración Orden de Trabajo</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Servicios</a></li>
+                            <li><a href="servicios.php">Servicios</a></li>
                             <li><a href="#">Guía de Trámites</a></li>
                             <li><a href="#">Estadística</a></li>
                             <li><a href="#">Prensa</a></li>

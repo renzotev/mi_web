@@ -255,6 +255,8 @@ header
 							color rojo
 
 .breadcrumb-wrapper
+	margin-top 30px
+	
 	.breadcrumb
 		background-color transparent
 		
@@ -273,18 +275,29 @@ header
 		
 		li
 			float left
+			display table
 			
 			a
 				background-color #333333
 				color white
 				text-decoration none
-				padding 5px 18px
-				display block
+				padding 0 18px
+				display table-cell
+				vertical-align middle
+				height 30px
+				max-width 260px
+				line-height 14px
 			
 			&.active
-				background-color #FF0000
-				color white
-				padding 5px 18px
+				span
+					background-color #FF0000
+					color white
+					padding 0 18px
+					display table-cell
+					vertical-align middle
+					height 30px
+					max-width 260px
+					line-height 14px
 
 .carousel-wrapper
 	padding 30px 0
@@ -389,6 +402,9 @@ header
 .general-content
 	padding 30px 0
 	
+	a
+		color rojo
+	
 	img
 		max-width 100%
 		
@@ -425,6 +441,15 @@ header
 	.h6
 		font-size 14px
 	
+	.alert-message
+		text-align center
+		
+		span
+			display inline-block
+			background-color #FF0000
+			color white
+			padding 10px 20px
+	
 	.list-buttons-1
 		text-align center
 		list-style none
@@ -450,6 +475,145 @@ header
 				padding 10px 14px
 				border-radius 10px
 				background-gradient(#FF0000, #7f0000)
+	
+	.button-pdf
+		font-weight bold
+		background-color #FF0000
+		border-radius 10px
+		text-decoration none
+		padding 12px 47px 12px 15px
+		color white
+		display inline-block
+		position relative
+		margin 20px 0
+		
+		&:before
+			content ""
+			background url("../img/icon-pdf.png") no-repeat 0 0
+			width 22px
+			height 21px
+			display block
+			position absolute
+			top 50%
+			margin-top -10.5px
+			right 13px
+	
+	.certified-letters
+		margin 0
+		padding 0
+		list-style none
+		
+		li
+			background-color #e3e3e3
+			position relative
+			min-height 220px
+			padding-left 176px
+			padding-right 20px
+			margin-bottom 30px
+			
+			.letter-img
+				display block
+				margin-right 20px
+				position absolute
+				top 0
+				left 0
+			
+			.content-letter
+				padding 10px 0
+				
+				h3
+					font-size 14px
+					margin-top 10px
+					margin-bottom 0
+				
+				h4
+					font-size 14px
+				
+				.certified
+					display inline-block
+					color #FF0000
+					font-weight bold
+					position relative
+					padding-right 18px
+					
+					&:after
+						position absolute
+						content ""
+						width 12px
+						height 11px
+						background url("../img/icon-pdf-2.png") no-repeat 0 0
+						top 50%
+						margin-top -5.5px
+						right 0
+						
+	.list-checks
+		list-style none
+		margin 0
+		padding 0
+		margin-bottom 40px
+		
+		& > li
+			position relative
+			padding-left 12px
+			margin-bottom 15px
+			
+			&:before
+				position absolute
+				content ""
+				background url("../img/icon-check.png") no-repeat 0 0
+				width 7px
+				height 7px
+				top 6px
+				left 0
+			
+			.header-faq
+				display inline-block
+				padding-right 25px
+				font-weight bold
+				position relative
+				
+				&:after
+					position absolute
+					content ""
+					background url("../img/icon-arrow-bottom.png") no-repeat 0 0
+					width 19px
+					height 19px
+					top 0 
+					right 0
+				
+				& + ul
+					margin-top 10px
+					margin-left -10px
+					list-style disc outside none
+					
+
+	.list-links-years
+		a
+			color gray_body
+			
+		& > dt
+			background-color #FF0000
+			font-weight bold
+			color white
+			padding 8px
+			margin-bottom 15px
+			margin-top 35px
+			max-width 250px
+			
+			&:first-child
+				margin-top 0
+		
+		& > dd
+			margin-left	15px
+	
+	.logo-services
+		text-align center
+		margin-bottom 50px
+		margin-top 40px
+		
+		.img-responsive
+			display inline-block
+
 	
 .icon-buttons
 	.col-sm-4

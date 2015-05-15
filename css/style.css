@@ -205,6 +205,9 @@ header .navbar .navbar-collapse .navbar-nav li.active > a {
   background-color: #fff;
   color: #e91b23;
 }
+.breadcrumb-wrapper {
+  margin-top: 30px;
+}
 .breadcrumb-wrapper .breadcrumb {
   background-color: transparent;
 }
@@ -222,18 +225,28 @@ header .navbar .navbar-collapse .navbar-nav li.active > a {
 }
 .breadcrumb-wrapper .breadcrumb li {
   float: left;
+  display: table;
 }
 .breadcrumb-wrapper .breadcrumb li a {
   background-color: #333;
   color: #fff;
   text-decoration: none;
-  padding: 5px 18px;
-  display: block;
+  padding: 0 18px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 30px;
+  max-width: 260px;
+  line-height: 14px;
 }
-.breadcrumb-wrapper .breadcrumb li.active {
+.breadcrumb-wrapper .breadcrumb li.active span {
   background-color: #f00;
   color: #fff;
-  padding: 5px 18px;
+  padding: 0 18px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 30px;
+  max-width: 260px;
+  line-height: 14px;
 }
 .carousel-wrapper {
   padding: 30px 0;
@@ -347,6 +360,9 @@ header .navbar .navbar-collapse .navbar-nav li.active > a {
 .general-content {
   padding: 30px 0;
 }
+.general-content a {
+  color: #e91b23;
+}
 .general-content img {
   max-width: 100%;
 }
@@ -382,6 +398,15 @@ header .navbar .navbar-collapse .navbar-nav li.active > a {
 .general-content .h6 {
   font-size: 14px;
 }
+.general-content .alert-message {
+  text-align: center;
+}
+.general-content .alert-message span {
+  display: inline-block;
+  background-color: #f00;
+  color: #fff;
+  padding: 10px 20px;
+}
 .general-content .list-buttons-1 {
   text-align: center;
   list-style: none;
@@ -415,6 +440,144 @@ header .navbar .navbar-collapse .navbar-nav li.active > a {
   background: -ms-linear-gradient(#f00, #7f0000);
   background: -o-linear-gradient(#f00, #7f0000);
   background: linear-gradient(#f00, #7f0000);
+}
+.general-content .button-pdf {
+  font-weight: bold;
+  background-color: #f00;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 12px 47px 12px 15px;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  margin: 20px 0;
+}
+.general-content .button-pdf:before {
+  content: "";
+  background: url("../img/icon-pdf.png") no-repeat 0 0;
+  width: 22px;
+  height: 21px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -10.5px;
+  right: 13px;
+}
+.general-content .certified-letters {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.general-content .certified-letters li {
+  background-color: #e3e3e3;
+  position: relative;
+  min-height: 220px;
+  padding-left: 176px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+.general-content .certified-letters li .letter-img {
+  display: block;
+  margin-right: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.general-content .certified-letters li .content-letter {
+  padding: 10px 0;
+}
+.general-content .certified-letters li .content-letter h3 {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.general-content .certified-letters li .content-letter h4 {
+  font-size: 14px;
+}
+.general-content .certified-letters li .content-letter .certified {
+  display: inline-block;
+  color: #f00;
+  font-weight: bold;
+  position: relative;
+  padding-right: 18px;
+}
+.general-content .certified-letters li .content-letter .certified:after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 11px;
+  background: url("../img/icon-pdf-2.png") no-repeat 0 0;
+  top: 50%;
+  margin-top: -5.5px;
+  right: 0;
+}
+.general-content .list-checks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.general-content .list-checks > li {
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 15px;
+}
+.general-content .list-checks > li:before {
+  position: absolute;
+  content: "";
+  background: url("../img/icon-check.png") no-repeat 0 0;
+  width: 7px;
+  height: 7px;
+  top: 6px;
+  left: 0;
+}
+.general-content .list-checks > li .header-faq {
+  display: inline-block;
+  padding-right: 25px;
+  font-weight: bold;
+  position: relative;
+}
+.general-content .list-checks > li .header-faq:after {
+  position: absolute;
+  content: "";
+  background: url("../img/icon-arrow-bottom.png") no-repeat 0 0;
+  width: 19px;
+  height: 19px;
+  top: 0;
+  right: 0;
+}
+.general-content .list-checks > li .header-faq + ul {
+  margin-top: 10px;
+  margin-left: -10px;
+  list-style: disc outside none;
+}
+.general-content .list-links-years a {
+  color: #4d4d4d;
+}
+.general-content .list-links-years > dt {
+  background-color: #f00;
+  font-weight: bold;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 15px;
+  margin-top: 35px;
+  max-width: 250px;
+}
+.general-content .list-links-years > dt:first-child {
+  margin-top: 0;
+}
+.general-content .list-links-years > dd {
+  margin-left: 15px;
+}
+.general-content .logo-services {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+.general-content .logo-services .img-responsive {
+  display: inline-block;
 }
 .icon-buttons .col-sm-4 {
   padding: 0 45px 0 65px;
@@ -887,6 +1050,9 @@ header .navbar .navbar-collapse .navbar-nav li.active > a {
   header .navbar .navbar-collapse .navbar-nav li.active > a {
     background-color: #e91b23;
     color: #fff;
+  }
+  .breadcrumb-wrapper {
+    margin-top: 16px;
   }
   .general-content {
     padding-top: 10px;

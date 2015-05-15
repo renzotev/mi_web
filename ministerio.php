@@ -4,7 +4,7 @@
     <div class="container">
         <ol class="breadcrumb">
             <li><a href="index.php">Inicio</a></li>
-            <li class="active">Ministerio</li>
+            <li class="active"><span>Ministerio</span></li>
         </ol>
     </div>
 </div>
