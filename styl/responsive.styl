@@ -18,6 +18,12 @@
 		.navbar
 			background-color transparent
 			
+			.open>a,
+			.nav .open>a:focus,
+			.nav .open>a:hover
+				background-color rojo
+				color white !important
+			
 			.navbar-collapse
 				position relative
 				text-align center
@@ -28,7 +34,7 @@
 					display inline-block
 					float none
 					
-					li
+					& > li
 						&:before
 							content "|"
 							position absolute
@@ -38,7 +44,10 @@
 						
 						&:first-child
 							content ""
-
+					
+					li
+						text-align left
+						
 						a
 							color gray_body
 							font-size 16px
@@ -58,6 +67,8 @@
 		display block !important
 
 	.icon-buttons
+		border-bottom 1px dashed #969696
+		
 		.col-sm-4
 			padding 0 15px 0 35px
 		
