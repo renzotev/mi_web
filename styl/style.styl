@@ -41,6 +41,20 @@ transform(n)
 
 @import ("fonts.styl")
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-weight bold
+
 body
 	background url("../img/bg.png") repeat-x center top
 	color gray_body
@@ -236,10 +250,42 @@ header
 							color rojo
 					
 					&.active
-						a
+						& > a
 							background-color white
 							color rojo
-							
+
+.breadcrumb-wrapper
+	.breadcrumb
+		background-color transparent
+		
+		&:after,
+		&:before
+			content ""
+			clear both
+			display block
+		
+		& > li
+			& + li
+				margin-left 5px
+
+				&:before
+					content normal
+		
+		li
+			float left
+			
+			a
+				background-color #333333
+				color white
+				text-decoration none
+				padding 5px 18px
+				display block
+			
+			&.active
+				background-color #FF0000
+				color white
+				padding 5px 18px
+
 .carousel-wrapper
 	padding 30px 0
 	border-bottom 1px dashed #969696
@@ -340,6 +386,71 @@ header
 					font-size 11px
 					letter-spacing 5px
 
+.general-content
+	padding 30px 0
+	
+	img
+		max-width 100%
+		
+		&.alignright
+			float right
+			margin 0 0 1em 1em
+		
+		&.alignleft
+			float left
+			margin 0 1em 1em 0
+			
+		&.aligncenter
+			display block
+			margin-left auto
+			margin-right auto
+			
+	.alignright
+		float right
+		
+	.alignleft
+		float left
+		
+	.aligncenter
+		display block
+		margin-left auto
+		margin-right auto
+	
+
+	h5,
+	.h5
+		font-size 16px
+	
+	h6,
+	.h6
+		font-size 14px
+	
+	.list-buttons-1
+		text-align center
+		list-style none
+		font-size 0
+		margin 0
+		padding 0
+		
+		&:after,
+		&:before
+			content ""
+			clear both
+			display block
+			
+		li
+			display inline-block
+			margin 20px 8px
+			
+			a
+				display block
+				text-decoration none
+				font-size 14px
+				color white
+				padding 10px 14px
+				border-radius 10px
+				background-gradient(#FF0000, #7f0000)
+	
 .icon-buttons
 	.col-sm-4
 		padding 0 45px 0 65px

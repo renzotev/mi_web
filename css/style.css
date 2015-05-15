@@ -1,3 +1,17 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
 body {
   background: url("../img/bg.png") repeat-x center top;
   color: #4d4d4d;
@@ -187,9 +201,39 @@ header .navbar .navbar-collapse .navbar-nav li a:focus {
   background-color: #fff;
   color: #e91b23;
 }
-header .navbar .navbar-collapse .navbar-nav li.active a {
+header .navbar .navbar-collapse .navbar-nav li.active > a {
   background-color: #fff;
   color: #e91b23;
+}
+.breadcrumb-wrapper .breadcrumb {
+  background-color: transparent;
+}
+.breadcrumb-wrapper .breadcrumb:after,
+.breadcrumb-wrapper .breadcrumb:before {
+  content: "";
+  clear: both;
+  display: block;
+}
+.breadcrumb-wrapper .breadcrumb > li + li {
+  margin-left: 5px;
+}
+.breadcrumb-wrapper .breadcrumb > li + li:before {
+  content: normal;
+}
+.breadcrumb-wrapper .breadcrumb li {
+  float: left;
+}
+.breadcrumb-wrapper .breadcrumb li a {
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 18px;
+  display: block;
+}
+.breadcrumb-wrapper .breadcrumb li.active {
+  background-color: #f00;
+  color: #fff;
+  padding: 5px 18px;
 }
 .carousel-wrapper {
   padding: 30px 0;
@@ -299,6 +343,78 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
   position: absolute;
   font-size: 11px;
   letter-spacing: 5px;
+}
+.general-content {
+  padding: 30px 0;
+}
+.general-content img {
+  max-width: 100%;
+}
+.general-content img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+.general-content img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+.general-content img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.general-content .alignright {
+  float: right;
+}
+.general-content .alignleft {
+  float: left;
+}
+.general-content .aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.general-content h5,
+.general-content .h5 {
+  font-size: 16px;
+}
+.general-content h6,
+.general-content .h6 {
+  font-size: 14px;
+}
+.general-content .list-buttons-1 {
+  text-align: center;
+  list-style: none;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+.general-content .list-buttons-1:after,
+.general-content .list-buttons-1:before {
+  content: "";
+  clear: both;
+  display: block;
+}
+.general-content .list-buttons-1 li {
+  display: inline-block;
+  margin: 20px 8px;
+}
+.general-content .list-buttons-1 li a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 14px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #f00;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f00), to(#7f0000));
+  background: -webkit-linear-gradient(#f00, #7f0000);
+  background: -moz-linear-gradient(#f00, #7f0000);
+  background: -ms-linear-gradient(#f00, #7f0000);
+  background: -o-linear-gradient(#f00, #7f0000);
+  background: linear-gradient(#f00, #7f0000);
 }
 .icon-buttons .col-sm-4 {
   padding: 0 45px 0 65px;
@@ -752,7 +868,7 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
     top: 0;
     left: 0;
   }
-  header .navbar .navbar-collapse .navbar-nav > li:first-child {
+  header .navbar .navbar-collapse .navbar-nav > li:first-child:before {
     content: "";
   }
   header .navbar .navbar-collapse .navbar-nav li {
@@ -768,9 +884,15 @@ header .navbar .navbar-collapse .navbar-nav li.active a {
     background-color: #e91b23;
     color: #fff;
   }
-  header .navbar .navbar-collapse .navbar-nav li.active a {
+  header .navbar .navbar-collapse .navbar-nav li.active > a {
     background-color: #e91b23;
     color: #fff;
+  }
+  .general-content {
+    padding-top: 10px;
+  }
+  .general-content .container {
+    padding: 0 40px;
   }
   .hidden {
     display: block !important;

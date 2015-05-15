@@ -43,7 +43,8 @@
 							left 0
 						
 						&:first-child
-							content ""
+							&:before
+								content ""
 					
 					li
 						text-align left
@@ -59,10 +60,16 @@
 								color white
 						
 						&.active
-							a
+							& > a
 								background-color rojo
 								color white
 	
+	.general-content
+		padding-top 10px
+		
+		.container
+			padding 0 40px
+
 	.hidden
 		display block !important
 
