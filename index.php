@@ -83,13 +83,13 @@
 
                     <div class="col-sm-6">
                         <a href="#" class="button-icon-text btn-3">
-                            <span class="title-btn">Vamos Perú</span>
+                            <span class="title-btn">Impulsa Perú</span>
                             <span class="text-btn">Programa Nacional para la Promoción de Oportunidades Laborales</span>
                         </a>
                     </div>
                     <div class="col-sm-6">
                         <a href="#" class="button-icon-text btn-4">
-                            <span class="title-btn">Jóvenes a la Obra</span>
+                            <span class="title-btn">Jóvenes Productivos</span>
                             <span class="text-btn">Programa Nacional de Empleo Juvenil</span>
                         </a>
                     </div>

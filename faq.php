@@ -3,8 +3,9 @@
 <div class="breadcrumb-wrapper hidden">
     <div class="container">
         <ol class="breadcrumb">
-            <li><a href="index.php">Inicio</a></li>
-            <li class="active"><span>Alta Dirección</span></li>
+			<li><a href="index.php">Inicio</a></li>
+			<li><a href="servicios.php">Servicios</a></li>
+			<li class="active"><span>Preguntas frecuentes</span></li>
         </ol>
     </div>
 </div>
