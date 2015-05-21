@@ -11,7 +11,7 @@
 
 <div class="general-content">
     <div class="container">
-        <h5>EL MINISTERIO</h5>
+        <h1 class="h1-small">EL MINISTERIO</h1>
         <br />
         <h5>VISIÓN</h5>
         <p>Ser la principal institución pública referente para la sociedad peruana en la promoción de la empleabilidad, el autoempleo y del trabajo decente, que garantice el respecto irrestricto y la vigencia de los derechos socio laborales y fundamentales en el ámbito laboral; así como, la consolidación del diáMlogo y la concertación socio laboral, para el desarrollo socio económico descentralizado con inclusión social.</p>

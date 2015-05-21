@@ -400,6 +400,7 @@ header
 					letter-spacing 5px
 
 .general-content
+	color #333333
 	padding 30px 0
 	
 	a
@@ -441,6 +442,9 @@ header
 	.h6
 		font-size 14px
 	
+	.h1-small
+		font-size 16px
+	
 	.alert-message
 		text-align center
 		
@@ -450,6 +454,39 @@ header
 			color white
 			padding 10px 20px
 	
+	.alert-message-fullWidth
+		text-align center
+		padding 10px 20px
+		background-color #FF0000
+		color white
+	
+	.table-multiCols-wrapper
+		overflow-x scroll
+		
+		.table-multiCols
+			width 100%
+			margin-top 30px
+			
+			thead
+				tr
+					background-color #FF0000
+					
+					th
+						color white
+						text-align center
+						padding 7px 14px
+						border 1px solid white
+			
+			tbody
+				tr
+					background-color #e6e6e6
+					
+					td
+						text-align center
+						padding 7px 14px
+						border 1px solid #b3b3b3
+
+
 	.list-buttons-1
 		text-align center
 		list-style none
@@ -614,6 +651,96 @@ header
 		.img-responsive
 			display inline-block
 
+	.pdf-link-icon
+		background url("../img/ico-pdf-table.png") no-repeat 0 0
+		width 14px
+		height 13px
+		display inline-block
+		margin 0 3px
+	
+	.excel-link-icon
+		background url("../img/ico-excel-table.png") no-repeat 0 0
+		width 15px
+		height 15px
+		display inline-block
+		margin 0 3px
+	
+	.explorer-link-icon
+		background url("../img/ico-explorer-table.png") no-repeat 0 0
+		width 15px
+		height 14px
+		display inline-block
+		margin 0 3px
+	
+
+	& > .container > .table-downloads
+		margin-top 50px
+		
+		&:first-child
+			margin-top 0
+		
+		&.two-cols
+			& > tbody > tr > td
+				padding 0
+				width 50%
+				
+				&:first-child
+					td:last-child
+						border-right 0 none
+										
+
+	.table-downloads
+		width 100%
+		height 100%
+		
+		thead
+			tr
+				background-color #FF0000
+				
+				th
+					color white
+					font-weight normal
+					padding 14px
+					font-size 16px
+					border 1px solid #FF0000
+					vertical-align middle
+		
+		tbody
+			tr
+				background-color #efefef
+				
+				td,
+				th
+					padding 7px 14px
+					border 1px solid #b0b0b0
+					vertical-align middle
+					text-align center
+					
+					&:first-child
+						text-align left
+						width 100%
+				
+				td
+					.table-downloads
+						border 0 none
+						margin-bottom 0
+						
+						tr
+							td
+								border 0 none
+								border-right 1px solid #b0b0b0
+								
+								&:last-child
+									border-right 0 none
+							
+					&:last-child
+						white-space nowrap
+				
+				th
+					font-weight normal
+					background-color #c9c9c9
+					border-bottom 0 none
+				
 	
 .icon-buttons
 	.col-sm-4
