@@ -55,6 +55,8 @@
 	    				<td>Analista del OSEL</td>
 	    			</tr>
 
+	    			
+
 	    			<tr>
 	    				<td rowspan="2">Arequipa</td>
 	    				<td rowspan="2">El Carmen, Calle Los Picaflores 130 (Frente a la puerta de Ingenierías de la UNSA - Av. Independencia)</td>
