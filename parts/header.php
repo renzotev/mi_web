@@ -11,6 +11,8 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+
         <link rel="stylesheet" href="css/style.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
